@@ -81,20 +81,23 @@ the process after bone loss group of 25 patients 17 females and 8 males were eva
 ## Summary
 There are state of the art methods, such as transformers, which do a good job at summarization but none of which have been applied to the domain of research paper summarization. Our task was to summarize research papers using analytical and empirical methods, both extractive and abstractive respectively and we have tried to measure performances of both the tasks. We mined research papers under the topic of Computer Science from the ScienceDirect website using the method provided in the research paper “A Supervised Approach to Extractive Summarisation of Scientific Papers”[1]. We spent quite some time processing the data as the output from the mining algorithm was messy. We created two models for both extractive and abstractive methods, and we trained and tested them. The faults in both of our models were substantially different. While our extractive model produced grammatically coherent but irrelevant summaries, our abstractive model fell into an infinite loop, repeating the same words over and over again. Although our models did not perform well, more training time and computational power would definitely improve it. Also, we weren’t able to implement transformers, as that required more computation and time. The future scope of our project would be to implement BERT. 
 
+## Data to fiddle with
+Google Drive links to the data: <br>
+[Parsed_Papers](https://drive.google.com/drive/folders/1Xz78mg_5LLQUhumIqwQYw93apSsO3DFi) <br>
+[papers.pkl](https://drive.google.com/file/d/1RPsgg32xLBUwbMr3eV0uTqGuVgUQSGzu/view)
+
 ## Conclusion
 Through our experiments we have gained valuable insights into creating machine learning models for text summarization task. We created two different models for the different interpretations of the same task. We used heuristics for one model and deep recurrent neural network for the other and received vastly different results. More training data, compute power, and time for training would have certainly made our results better. We have compared both of our approach in terms of their performance and the generated summaries. The future scope of our project would be to train the models we have already created for more iterations and with all of our data. Additionally, we would like to implement more cutting-edge deep learning technologies like transforms especially BERT. 
 
 ## References
 
-[1] A Supervised Approach to Extractive Summarisation of Scientific Papers,
-Ed Collins, Isabelle Augenstein, Sebastian Riedel, 2017 2
-Extractive Summarization of Academic Research Papers
-https://arxiv.org/pdf/1706.03946.pdf
+[1] [A Supervised Approach to Extractive Summarisation of Scientific Papers,
+Ed Collins, Isabelle Augenstein, Sebastian Riedel, 2017 2](https://arxiv.org/pdf/1706.03946.pdf)
 
-[2] Data-driven Summarization of Scientific Articles - Nikola I. Nikolov, Michael Pfeiffer, Richard H.R. Hahnloser, 2018
-https://arxiv.org/pdf/1804.08875.pdf
+[2] [Data-driven Summarization of Scientific Articles - Nikola I. Nikolov, Michael Pfeiffer, Richard H.R. Hahnloser, 2018](
+https://arxiv.org/pdf/1804.08875.pdf)
 
-[3] Text Summarization with Pretrained Encoders - Yang Liu and Mirella Lapata, 2019 https://arxiv.org/pdf/1908.08345v2.pdf
+[3] [Text Summarization with Pretrained Encoders - Yang Liu and Mirella Lapata, 2019](https://arxiv.org/pdf/1908.08345v2.pdf)
 
 [4] A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents - Arman Cohan, Franck Dernoncourt, Doo Soon Kim, Trung BuiSeokhwan Kim, Walter Chang, Nazli Goharian, 2018
 
@@ -104,4 +107,4 @@ https://arxiv.org/pdf/1804.08875.pdf
 
 [7] Leveraging BERT for Extractive Text Summarization on Lectures -  Derek Miller, 2018
 
-[8] Attention Layer Code - https://github.com/thushv89/attention_keras/blob/master/layers/attention.py
+[8] [Attention Layer Code](https://github.com/thushv89/attention_keras/blob/master/layers/attention.py)
